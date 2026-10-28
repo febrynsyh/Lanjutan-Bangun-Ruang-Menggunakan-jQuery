@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #800442;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.header {
+    background: #800442;
+    color: rgb(194, 195, 194);
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.card {
+    background: rgb(169, 0, 124);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #10fff7;
+}
+
+label {
+    color: #fab8b8;
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 8px;
+    background: #e924ae;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+.result-card {
+    min-height: 220px;
+}
+
+#result {
+    padding: 15px;
+    background: #eff6ff;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#result p {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}

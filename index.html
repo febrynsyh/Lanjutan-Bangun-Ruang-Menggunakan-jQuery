@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bangun Ruang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Kalkulator Bangun Ruang</h1>
+        <p>Hitung volume dan luas permukaan dengan mudah</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Input Perhitungan</h2>
+
+            <form id="calculatorForm">
+                <label for="shape">Pilih Bangun Ruang</label>
+                <select id="shape" required>
+                    <option value="kubus">Kubus</option>
+                    <option value="balok">Balok</option>
+                    <option value="tabung">Tabung</option>
+                    <option value="kerucut">Kerucut</option>
+                    <option value="bola">Bola</option>
+                    <option value="limas">Limas Segi Empat</option>
+                    <option value="prisma">Prisma Segitiga</option>
+                    <option value="limasSegitiga">Limas Segitiga Beraturan</option>
+                </select>
+
+                <div id="inputFields"></div>
+
+                <button type="submit">Hitung Sekarang</button>
+            </form>
+        </section>
+
+        <section class="card result-card">
+            <h2>Hasil Perhitungan</h2>
+            <div id="result">
+                <p>Silakan masukkan ukuran dan tekan tombol hitung.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mini Project JavaScript, HTML  dan CSS | Kalkulator Bangun Ruang</p>
+         <p>Matakuliah: Pemrograman Web</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
